@@ -27,15 +27,13 @@ namespace ComparacaoSemantica.Testes
 
             var cmd = mapeador.Mapear(vm);
 
-            // LIKENESS
-            var cmdEsperado = vm.AsSource().OfLikeness<CriacaoDeClienteCmd>(); //Without(c => c.DataDeOcorrencia);
-
-            // RESEMBLANCE
-            // pensar em exemplo para usar com Mock
-            //var cmdEsperado = vm.AsSource().OfLikeness<CriacaoDeClienteCmd>().Without(c => c.DataDeOcorrencia).CreateProxy();
-            //_mock.Verify(mapeador => mapeador.Do(cmdEsperado));
-
+            var cmdEsperado = vm.AsSource().OfLikeness<CriacaoDeClienteCmd>();
             cmdEsperado.ShouldEqual(cmd);
         }
+
+        // RESEMBLANCE
+        // pensar em exemplo para usar com Mock
+        //var cmdEsperado = vm.AsSource().OfLikeness<CriacaoDeClienteCmd>().Without(c => c.DataDeOcorrencia).CreateProxy();
+        //_mock.Verify(mapeador => mapeador.Do(cmdEsperado));
     }
 }
