@@ -41,18 +41,18 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CriacaoDeClienteViewModel.cs" />
-    <Compile Include="CriacaoDeClienteCmd.cs" />
-    <Compile Include="Mapeador.cs" />
-    <Compile Include="MapeadorTeste.cs" />
+    <Compile Include="TesteDeEstado\CriacaoDeClienteViewModel.cs" />
+    <Compile Include="TesteDeEstado\CriacaoDeClienteCmd.cs" />
+    <Compile Include="TesteDeEstado\Mapeador.cs" />
+    <Compile Include="TesteDeEstado\MapeadorTeste.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesteDeInteracao\ClienteFoiCadastrado.cs" />
+    <Compile Include="TesteDeInteracao\Evento.cs" />
+    <Compile Include="TesteDeInteracao\INotificador.cs" />
+    <Compile Include="TesteDeInteracao\Servico.cs" />
+    <Compile Include="TesteDeInteracao\ServicoTeste.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,5 +1,5 @@
 ﻿
-namespace ComparacaoSemantica.Testes
+namespace ComparacaoSemantica.Testes.TesteDeEstado
 {
     public class CriacaoDeClienteCmd
     {

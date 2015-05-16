@@ -1,5 +1,5 @@
 ﻿
-namespace ComparacaoSemantica.Testes
+namespace ComparacaoSemantica.Testes.TesteDeEstado
 {
     public class Mapeador
     {
@@ -10,7 +10,6 @@ namespace ComparacaoSemantica.Testes
                 Nome = vm.Nome,
                 NumeroDaMatricula = vm.NumeroDaMatricula,
                 Email = vm.Email
-                //DataDeOcorrencia = DateTime.Now
             };
         }
     }
